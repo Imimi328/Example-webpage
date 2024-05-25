@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website</title>
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    /* Back button styling */
+    #backButton {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #backButton:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#section1">Section 1</a></li>
+      <li><a href="#section2">Section 2</a></li>
+      <li><a href="#section3">Section 3</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="section1" class="parallax">
+      <div class="content">
+        <h2>Section 1</h2>
+        <p>This is the first section of the website.</p>
+      </div>
+    </section>
+    <section id="section2" class="parallax">
+      <div class="content">
+        <h2>Section 2</h2>
+        <p>This is the second section of the website.</p>
+      </div>
+    </section>
+    <section id="section3" class="parallax">
+      <div class="content">
+        <h2>Section 3</h2>
+        <p>This is the third section of the website.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="about">
+      <h2>About Us</h2>
+      <p>This is the about section. Add your copyright information and contact details here.</p>
+      <p>Contact: example@example.com</p>
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back button -->
+  <button id="backButton">Back</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get the back button element
+      var backButton = document.getElementById("backButton");
+
+      // Add click event listener to the back button
+      backButton.addEventListener("click", function() {
+        // Navigate back to Page.html
+        window.location.href = "index.html";
+      });
+    });
+  </script>
+</body>
+</html>
