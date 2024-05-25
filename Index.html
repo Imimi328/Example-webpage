@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Welcome to Our Service</h1>
+      <p class="guarantee">72-hour guaranteed delivery</p>
+    </div>
+    <div class="buttons">
+      <button class="btn" id="flyerBtn">Flyer</button>
+      <button class="btn" id="logoBtn">Logo</button>
+      <button class="btn" id="websiteBtn">Website</button>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="modal" id="flyerModal">
+    <div class="modal-content">
+      <span class="close" id="closeFlyerModal">&times;</span>
+      <h2>Select a Flyer</h2>
+      <div class="flyer-options">
+        <!-- Flyer options go here -->
+        <div class="flyer-option">
+          <img src="flyer1.jpg" alt="Flyer 1">
+        </div>
+        <div class="flyer-option">
+          <img src="flyer2.jpg" alt="Flyer 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="logoModal">
+    <div class="modal-content">
+      <span class="close" id="closeLogoModal">&times;</span>
+      <h2>Select a Logo</h2>
+      <div class="logo-options">
+        <!-- Logo options go here -->
+        <div class="logo-option">
+          <img src="logo1.png" alt="Logo 1">
+        </div>
+        <div class="logo-option">
+          <img src="logo2.png" alt="Logo 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="websiteModal">
+    <div class="modal-content">
+      <span class="close" id="closeWebsiteModal">&times;</span>
+      <h2>Select a Website Template</h2>
+      <div class="website-options">
+        <!-- Website options go here -->
+        <div class="website-option">
+          <img src="website1.jpg" alt="Website 1">
+        </div>
+        <div class="website-option">
+          <img src="website2.jpg" alt="Website 2">
+          <button class="customize-btn">Customize</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
